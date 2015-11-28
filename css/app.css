@@ -1,0 +1,332 @@
+/***************************
+    General styles
+****************************/
+
+.hideme {
+    opacity: 1;
+}
+
+.animated {
+    -webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    animation-delay: 0.5s;
+}
+
+body {
+    font-size: 16px;
+    background-color: #b9e7ff;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Nunito', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #3a5c91;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #4fcaeb;
+}
+
+.button {
+    margin-top: 0.4em;
+    font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.07em;
+    border: solid #8ad587 3px;
+    border-radius: 10px;
+    background-color: #8ad587;
+}
+
+.outline {
+    color: #003f54;
+    border: solid #8ad587 3px;
+    background: none;
+}
+
+.outline:hover, .button:hover {
+    border: solid transparent 3px;
+}
+
+/* Small screens */
+@media only screen and (max-width: 40em) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/***************************
+    Header
+****************************/
+
+header {
+    background-color: #b9e7ff;
+    background-image: url("../img/bgColors.png");
+    background-size: 90%;
+    background-repeat: repeat;
+}
+
+header .row {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+header .row {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+header .headerbg {
+    background-image: url("../img/bgHeader.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Small screens */
+@media only screen and (max-width: 40em) {
+
+    header {
+        background-color: #b9e7ff;
+        background-image: url("../img/bgColorsSmall.png");
+        background-size: 90%;
+        background-repeat: repeat;
+    }
+
+    header img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        padding-bottom: 0;
+    }
+
+    header h2 {
+        padding-bottom: 1rem;
+    }
+
+    .button {
+        margin: 0 0 1.25rem;
+        padding: 1rem 1rem 1.0625rem 1rem;
+    }
+
+    header .row {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    header .row div {
+        padding-top: 0.5rem;
+        padding-bottom: 0;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) {
+    header .row div {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) {
+    header .row div {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+}
+
+/***************************
+    Marketing section
+****************************/
+
+.marketing {
+    padding: 10rem 0 5rem 0;
+    background-image: url("../img/testBgMarketing.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #dbf0fd;
+}
+
+.marketing h2 {
+    padding: 0 0 3rem 0;
+}
+
+.marketing img {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.marketing h4 {
+    font-weight: 300;
+    color: #4fcaeb;
+}
+
+.marketing p {
+    color: #3a5c91;
+}
+
+/* Small screens */
+@media only screen and (max-width: 40em) {
+    .marketing {
+        padding: 4rem 0 4rem 0;
+        background-image: url("../img/testBgMarketingSmall.png");
+    }
+
+    .marketing h1 {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .marketing h2 {
+        padding-bottom: 1rem;
+    }
+}
+
+/***************************
+    Product section
+****************************/
+
+.product {
+    padding: 8rem 0 3rem 0;
+    background-image: url("../img/bgStoryTest.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #b9e7ff;
+}
+
+.imagewrap {
+    padding-top: 1em;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.ontop {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    z-index: 1;
+}
+
+#owl-demo .item img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+
+/* Small screens */
+@media only screen and (max-width: 40em) {
+    .product {
+        padding: 4rem 0 2rem 0;
+        background-image: url("../img/bgStorySmall.png");
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #b9e7ff;
+    }
+
+    .imagewrap {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+}
+
+/***************************
+    Story section
+****************************/
+
+.story {
+    padding: 8rem 0 3rem 0;
+    background-image: url("../img/testBgMarketing.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #dbf0fd;
+}
+
+.story h2 {
+    padding-bottom: 2rem;
+}
+
+/***************************
+    Contact section
+****************************/
+
+.contact {
+    padding: 6rem 0 2rem 0;
+    background-image: url("../img/bgStoryTest.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #b9e7ff;
+}
+
+/* Small screens */
+@media only screen and (max-width: 40em) {
+    .contact {
+        padding: 6rem 0 1rem 0;
+        background-image: url("../img/testBgMarketingSmall.png");
+        background-color: #dbf0fd;
+    }
+}
+
+/***************************
+    Footer
+****************************/
+
+footer {
+    padding-top: 1.125rem;
+    padding-bottom: 0.8em;
+    background-image: url("../img/bgFooter.png"), url("../img/bgColors.png");
+    background-position: top, center;
+    background-size: 100%, 90%;
+    background-repeat: no-repeat, repeat;
+    background-color: #3a5c91;
+}
+
+footer img {
+    display: block;
+    padding-top: 1.5em;
+    padding-bottom: 0.7rem;
+    max-width: 70px;
+    margin: 0 auto;
+}
+
+footer h4 {
+    font-size: 1em;
+    color: white;
+}
+
+/* Small screens */
+@media only screen and (max-width: 40em) {
+    footer {
+        background-image: url("../img/bgFooterSmall.png"), url("../img/bgColorsSmall.png");
+        background-position: top, center;
+        background-size: 100%, 90%;
+        background-repeat: no-repeat, repeat;
+    }
+}
